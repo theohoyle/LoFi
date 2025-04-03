@@ -27,7 +27,7 @@ body {
 .logo {
     width: 40vw;
     max-width: 500px;
-    min-height: 300px;
+    min-width: 150px;
     height: auto;
 }
 
@@ -45,19 +45,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.548);
 }
 
-
 .video-box iframe {
     flex: 1 1 calc(20% - 10px);
     max-width: calc(20% - 10px);
     aspect-ratio: 16 / 9;
     border: none;
-}
-
-@media (max-width: 1200px) {
-    .logo {
-        flex: 1 1 calc 100%;
-        max-width: 100%;
-    }
 }
 
 
@@ -68,10 +60,26 @@ body {
     }
 }
 
+
+@media (max-width: 768px) {
+    .logo {
+        width: 60vw;
+        min-width: 200px;
+    }
+}
+
+
 @media (max-width: 600px) {
     .video-box iframe {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80vw;
+        min-width: 180px;
     }
 }
 
